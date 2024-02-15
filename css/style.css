@@ -1,0 +1,181 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    font-family: 'Lato', sans-serif;
+    margin: 0 auto;
+    width: 100%;
+    text-align: center; 
+}
+
+.header h1 {
+    text-transform: uppercase;
+    margin: 2rem auto;
+}
+
+.image-container {   
+    clip-path: circle(50% at 50% 50%);
+    background-image: url('../img/profile1.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 450px;
+    width: 450px;
+    margin: 2rem auto;  
+}
+
+.navigation {
+    display: flex;
+    justify-content: center; /* Nupud asetsevad keskel */
+    margin: 3rem 0;
+}
+
+.navigation ul {
+    list-style: none;
+}
+
+.navigation ul li {
+    border: 1px solid black;
+    border-radius: 5px;
+    display: inline-block;
+    font-size: 2rem;
+    padding: 1rem;
+    width: 16rem;
+    margin: 3rem 0; /* Väike vahe nuppude vahel */
+}
+
+.main-container {
+    margin: 0 auto;
+    width: 75%;
+}
+
+.main-container div {
+    margin-bottom: 2rem;
+}
+
+.main-container h1 {
+    margin-bottom: 5rem;
+}
+
+.main-container p {
+    text-align: justify;
+}
+
+.footer {
+    font-size: 2rem;
+    padding: 2rem;
+}
+
+.footer ul {
+    list-style: none;
+    margin-bottom: 3rem;
+}
+
+.footer ul li {
+    display: inline-block;
+    margin: 2rem;
+}
+
+.footer ul a {
+    color: #777;
+    text-decoration: none;
+}
+
+/* Media queries for different screen sizes */
+
+@media (min-width: 320px) and (max-width: 480px) /* tuleb märkida suurused min... ja ... max*/
+ {
+    .container {
+        /*width: 100%;*/
+        background-color:rgb(48, 230, 78);
+        color: rgb(20, 23, 26);
+    }
+
+    .navigation ul li:nth-child(1) {
+        background-color: #ff0000; /* Esimese nupu värv */
+        border: 1px solid #ff0000; /* Piirjoone värv */
+        color: #0a0a0a; /* Teksti värv */
+    }
+
+    .navigation ul li:nth-child(2) {
+        background-color: #00ff00; /* Teise nupu värv */
+        border: 1px solid #00ff00; /* Piirjoone värv */
+        color: #af0b0b; /* Teksti värv */
+    }
+
+    .navigation ul li:nth-child(3) {
+        background-color: #0000ff; /* Kolmanda nupu värv */
+        border: 1px solid #0000ff; /* Piirjoone värv */
+        color: #1a1414; /* Teksti värv */
+    }
+
+    .navigation ul li:nth-child(4) {
+        background-color: #ffff00; /* Neljanda nupu värv */
+        border: 1px solid #ffff00; /* Piirjoone värv */
+        color: #000; /* Teksti värv */
+    }
+}
+
+@media (min-width: 480px) and (max-width: 768px) {
+    .container {
+        background-color: #be4a4a; /* Taustavärv */
+    }
+
+    .navigation ul li:nth-child(1) {
+        background-color: #ff8000; /* Esimese nupu värv */
+        border: 1px solid #ff8000; /* Piirjoone värv */
+        color: #fff; /* Teksti värv */
+    }
+
+    .navigation ul li:nth-child(2) {
+        background-color: #40bf40; /* Teise nupu värv */
+        border: 1px solid #40bf40; /* Piirjoone värv */
+        color: #fff; /* Teksti värv */
+    }
+
+    .navigation ul li:nth-child(3) {
+        background-color: #0066cc; /* Kolmanda nupu värv */
+        border: 1px solid #0066cc; /* Piirjoone värv */
+        color: #fff; /* Teksti värv */
+    }
+
+    .navigation ul li:nth-child(4) {
+        background-color: #993399; /* Neljanda nupu värv */
+        border: 1px solid #993399; /* Piirjoone värv */
+        color: #fff; /* Teksti värv */
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1024px), (min-width: 1024px) {
+    .container {
+        background-color: #cccccc; /* Taustavärv */
+    }
+
+    .navigation ul li:nth-child(1) {
+        background-color: #336699; /* Esimese nupu värv */
+        border: 1px solid #336699; /* Piirjoone värv */
+        color: #fff; /* Teksti värv */
+    }
+
+    .navigation ul li:nth-child(2) {
+        background-color: #ff3399; /* Teise nupu värv */
+        border: 1.5px solid #ff3399; /* Piirjoone värv */
+        color: #fff; /* Teksti värv */
+    }
+
+    .navigation ul li:nth-child(3) {
+        background-color: #cc3300; /* Kolmanda nupu värv */
+        border: 1px solid #cc3300; /* Piirjoone värv */
+        color: #fff; /* Teksti värv */
+    }
+
+    .navigation ul li:nth-child(4) {
+        background-color: #669933; /* Neljanda nupu värv */
+        border: 1px solid #669933; /* Piirjoone värv */
+        color: #fff; /* Teksti värv */
+    }
+}
